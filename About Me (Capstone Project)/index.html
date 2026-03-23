@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ali Ahmad</title>
+    <!-- Bootstrap CSS for responsive layout and components -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Google Fonts preconnect for faster load -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Caveat and Roboto font imports -->
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
+        /* Base font and background for the whole page */
         body {
             font-family: "Roboto";
             background-color: #FFFDF6;
         }
+        /* Hero section: centered column layout with padding */
         .name-container {
             display: flex;
             flex-direction: column;
@@ -21,15 +26,18 @@
             background-color: #FAF6E9;
             padding: 5em;
         }
+        /* Green accent color for the name/title text */
         .title-text {
             display: flex;
             flex-direction: column;
             color: #A0C878;
             align-items: center;
         }
+        /* Strikethrough style used on the "a programmer" subtitle */
         .strike-text {
             text-decoration: line-through;
         }
+        /* Intro section: vertically centered with spacing between items */
         .intro {
             display: flex;
             flex-direction: column;
@@ -39,21 +47,25 @@
             gap: 20px;
             font-size: larger;
         }
+        /* Keeps bio text narrow and centered */
         .intro > p {
             width: 30%;
             text-align: center;
         }
+        /* Fixed square that clips the profile photo into a circle */
         .square-container {
             height: 300px;
             width: 300px;
             overflow: hidden;
         }
+        /* Makes the profile image fill the container as a circle */
         .square-container img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             border-radius: 50%;
         }
+        /* Contact section: centered column with bottom padding */
         .contact {
             display: flex;
             flex-direction: column;
@@ -62,9 +74,11 @@
             gap: 1rem;
             padding-bottom: 5rem;
         }
+        /* Green heading for the contact section */
         .contact > h1 {
             color: #A0C878;
         }
+        /* Footer: green background with light text, centered */
         .footer {
             display: flex;
             flex-direction: column;
@@ -75,11 +89,13 @@
             padding: 1em;
             gap: 0.5rem;
         }
+        /* Social links styled to match the footer (light, no underline) */
         .socials > a {
             color: #FFFDF6;
             text-decoration: none;
         }
 
+        /* Responsive: shrink hero image and profile photo on small screens */
         @media (max-width: 800px) {
 
         .name-container > img {
@@ -94,21 +110,26 @@
     </style>
 </head>
 <body>
+    <!-- Hero section with name and decorative image -->
     <div class="name-container">
         <div class="title-text">
             <h1>I'm Ali Ahmad</h1>
-            <h2 class="strike-text">a programmar</h2>
+            <h2 class="strike-text">a programmer</h2> <!-- Strikethrough for a playful touch -->
         </div>
-        <img src="./computers.png" alt="computers"/>
+        <img src="./public/computers.png" alt="computers"/>
     </div>
+
+    <!-- Brief bio section with circular profile photo -->
     <div class="intro">
         <div class="square-container">
-            <img src="./Linked In Picture.jpeg" alt="Linked In Picture"/>
+            <img src="./public/linked_in_picture.jpeg" alt="Linked In Picture"/>
         </div> 
         <p>
             My name is Ali Ahmad and I'm a developer. I'm doing my masters in Computer Science from RIT.
         </p>
     </div>
+
+    <!-- Call-to-action section linking to LinkedIn -->
     <div class="contact">
         <h1>Get In Touch</h1>
         <p>
@@ -116,12 +137,16 @@
         </p>
         <a type="button" class="btn btn-success btn-lg" href="https://www.linkedin.com/in/aliahhmad/">Contact Me</a>
     </div>
+
+    <!-- Footer with social link and copyright -->
     <div class="footer">
         <div class="socials">
             <a href="https://www.linkedin.com/in/aliahhmad/">Linked In</a>
         </div>
         <p>@Ali Ahmad</p>
     </div>
+
+    <!-- Bootstrap JS bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>   
 </body>
 </html>
