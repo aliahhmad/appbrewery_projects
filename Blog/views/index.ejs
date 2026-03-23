@@ -1,0 +1,43 @@
+<%- include("partials/header", { title: title }) %>
+
+<div class="container text-left mt-4 mb-auto">
+  <div class="row d-flex align-items-center">
+    <div class="col">
+      <h1 class="mb-4">View Posts</h1>
+    </div>
+    <div class="col">
+      <div class="d-flex justify-content-end">
+        <a href="/create" class="btn btn-primary">Create Post</a>
+      </div>
+    </div>
+  </div>
+
+  <% posts.forEach(post => { %>
+  <div class="row mb-4">
+    <div class="col">
+      <div class="card">
+        <div class="card-header">
+          Post <%= post.id %>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Post Title: <%= post.title %></h5>
+          <p class="card-text">Post Author: <%= post.author %> | Post Date: <%= post.date %></p>
+          <p class="card-text"><%= post.text %></p>
+          
+          <form action="/edit" method="POST" style="display:inline;">
+            <input type="hidden" name="postId" value="<%= post.id %>">
+            <button type="submit" class="btn btn-primary">Edit</button>
+          </form>
+
+          <form action="/deletePost" method="POST" style="display:inline;">
+            <input type="hidden" name="postId" value="<%= post.id %>">
+            <button type="submit" class="btn btn-danger">Delete</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% }) %>
+</div>
+
+<%- include("partials/footer.ejs") %>

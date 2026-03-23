@@ -1,0 +1,36 @@
+<%- include("partials/header") %>
+
+<div class="container mt-4">
+  <h1>Edit Book</h1>
+  <form action="/edit/<%= book.id %>" method="POST">
+    <div class="mb-3">
+      <label for="name" class="form-label">Book Name</label>
+      <input type="text" class="form-control" id="name" name="name" value="<%= book.name %>"/>
+    </div>
+    <div class="mb-3">
+      <label for="isbn" class="form-label">ISBN</label>
+      <input type="text" class="form-control" id="isbn" name="isbn" value="<%= book.isbn %>"/>
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">Description</label>
+      <textarea
+        class="form-control"
+        id="description"
+        name="description"
+        rows="6"
+      ><%= book.description %></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="notes" class="form-label">My Notes</label>
+      <textarea
+        class="form-control"
+        id="notes"
+        name="notes"
+        rows="6"
+      ><%= book.notes %></textarea>
+    </div>
+    <button class="btn btn-outline-success" type="submit">Submit Book</button>
+  </form>
+</div>
+
+<%- include("partials/footer.ejs") %>

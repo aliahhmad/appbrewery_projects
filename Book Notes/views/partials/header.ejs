@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="/images/logo.svg" type="image/x-icon" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/main.css" />
+
+    <title><%= locals.title ? title + " - BookNotes" : "BookNotes" %></title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="/">
+            <img
+              src="/images/logo.svg"
+              alt="book logo image"
+              style="max-height: 2rem; max-width: 2rem"
+              class="me-2"
+            />
+            BookNotes
+          </a>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="/" onclick="setActive(this)"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about" onclick="setActive(this)"
+                  >About Me</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact" onclick="setActive(this)"
+                  >Contact Me</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <script>
+          function setActive(el) {
+            $(".nav-link").removeClass("active");
+            $(el).addClass("active");
+          }
+        </script>
+      </nav>
+    </header>
+
+    <main>

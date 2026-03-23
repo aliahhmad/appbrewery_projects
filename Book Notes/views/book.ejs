@@ -1,0 +1,44 @@
+<%- include("partials/header") %> <%- include("partials/alert") %>
+<div class="container mt-4">
+  <div class="row g-4 align-items-start">
+    <div class="col-md-2">
+      <img
+        src="https://covers.openlibrary.org/b/isbn/<%= book.isbn %>-L.jpg"
+        class="img-fluid rounded"
+        alt="<%= book.name %> Cover Picture"
+      />
+    </div>
+    <div class="col-md-10">
+      <div>
+        <h5 class="card-title"><%= book.name %></h5>
+        <p class="card-text">ISBN: <%= book.isbn %></p>
+        <p class="card-text">
+          <small class="text-body-secondary">Date Read: <%= book.date %></small>
+        </p>
+        <p class="card-text"><%= book.description %></p>
+        <div class="d-flex flex-column">
+          <div class="py-2">
+            <a href="/edit/<%= book.id %>" class="btn btn-outline-primary"
+              >Edit</a
+            >
+
+            <form
+              action="/delete/<%= book.id %>"
+              method="POST"
+              style="display: inline"
+            >
+              <button type="submit" class="btn btn-outline-danger">
+                Delete
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-4 d-flex flex-column">
+    <h3>My Notes</h3>
+    <p style="white-space: pre-line"><%= book.notes %></p>
+  </div>
+</div>
+<%- include("partials/footer.ejs") %>

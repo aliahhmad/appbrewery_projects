@@ -1,0 +1,39 @@
+<%- include("partials/header") %>
+
+<div class="container mt-4">
+  <h1>Contact Me</h1>
+  <form action="/contact" method="POST">
+    <div class="mb-3">
+      <label for="name" class="form-label">Full Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        name="name"
+        placeholder="Ali Ahmad"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email Address</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        name="email"
+        placeholder="name@example.com"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Message</label>
+      <textarea
+        class="form-control"
+        id="message"
+        name="message"
+        rows="3"
+      ></textarea>
+    </div>
+    <button class="btn btn-outline-success" type="submit">Submit</button>
+  </form>
+</div>
+
+<%- include("partials/footer.ejs") %>

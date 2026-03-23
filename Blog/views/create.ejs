@@ -1,0 +1,22 @@
+<%- include("partials/header", { title: title }) %>
+
+<div class="container text-left mt-4 mb-auto">
+  <h1 class="mb-4">Create Post</h1>
+  <form action="/createPost" method="POST">
+    <div class="mb-3">
+    <label for="postTitle" class="form-label">Post Title</label>
+    <input type="text" class="form-control" id="postTitle" name="postTitle">
+    </div>
+      <div class="mb-3">
+    <label for="postAuthor" class="form-label">Post Author</label>
+    <input type="text" class="form-control" id="postAuthor" name="postAuthor">
+    </div>
+    <div class="mb-3">
+    <label for="postText" class="form-label">Post Text</label>
+    <textarea class="form-control" id="postText" name="postText" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<%- include("partials/footer.ejs", { title: title }) %>
