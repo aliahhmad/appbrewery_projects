@@ -1,0 +1,12 @@
+{
+  "id": 46,
+  "posts": [
+    {
+      "id": 46,
+      "title": "This is a sample post.",
+      "author": "Ali Ahmad",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non consectetur nibh, at iaculis nisi. Sed vestibulum, nisl id malesuada mollis, risus arcu ornare sapien, sit amet semper leo turpis non nisl. Aenean tortor lorem, consequat sit amet luctus at, elementum nec neque. Nam sit amet accumsan ligula. In accumsan vestibulum justo in cursus. Vivamus lorem lacus, rhoncus sit amet gravida eget, varius quis odio. Sed sed mauris nec enim mattis accumsan vitae sit amet tellus. Pellentesque ac pharetra massa, nec varius diam. Donec vitae eros tempor, molestie tortor nec, venenatis sapien. Curabitur pretium enim et consectetur consectetur. Sed aliquam urna vel turpis viverra, sed dapibus massa vulputate. Pellentesque nisi ante, tempus ut eros eget, ornare aliquet nisi. Nullam in libero in felis sollicitudin suscipit. Integer vel metus viverra quam gravida mollis eget vel mauris. Sed quis fermentum tellus.",
+      "date": "2026-03-23"
+    }
+  ]
+}
