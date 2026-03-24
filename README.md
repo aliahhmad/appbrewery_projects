@@ -20,4 +20,6 @@ This project helped me learn how to build a simple blog-style app with Express a
 
 ## Note
 
-Note: AI assistance was used in generating code comments and documentation throughout this project.
+---
+
+> **Note:** AI assistance was used in generating code comments and documentation throughout this project.
