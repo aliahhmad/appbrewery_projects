@@ -18,8 +18,6 @@ This project helped me learn how to build a full-stack CRUD application with Exp
 
 This project helped me learn how to build a simple blog-style app with Express and EJS while working with file-based data storage. It gave me practice with handling form submissions, creating, editing, and deleting posts, reading and writing JSON data, validating user input, and organizing routes for a small content management workflow.
 
-## Note
-
 ---
 
 > **Note:** AI assistance was used in generating code comments and documentation throughout this project.
